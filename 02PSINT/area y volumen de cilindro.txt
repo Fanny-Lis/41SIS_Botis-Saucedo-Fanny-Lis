@@ -1,6 +1,8 @@
 Algoritmo sin_titulo
+	
+definir op, op2 como entero
 repetir
-	escribir "Ingrese 1 para calcular área de un cilindro y 2 para calcular el volumen"
+	escribir "Ingrese 1 para calcular Ã¡rea de un cilindro y 2 para calcular el volumen"
 	leer op
 
 
@@ -14,9 +16,9 @@ segun op Hacer
 			escribir "Ingrese el valor de la altura"
 			leer h
 			area=2*3.1416*r+(r+h)
-			escribir "El área del cilindro es de:", area
+			escribir "El Ã¡rea del cilindro es de:", area
 			
-			Escribir "Ingrese 2 para regresar al menú"
+			Escribir "Ingrese 2 para regresar al menÃº"
 			leer op2
 		
 		

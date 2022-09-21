@@ -3,7 +3,7 @@ Algoritmo sin_titulo
 	definir op como entero;
 	
 
-	escribir "1.Para calcular el nùmero mayor y 2.Para calcular el nùmero menor"
+	escribir "1.Para calcular el nÃ¹mero mayor y 2.Para calcular el nÃ¹mero menor"
 	leer op;
 	
 
@@ -22,11 +22,11 @@ Algoritmo sin_titulo
 			
 			
 			si (a>b) y (a>c) Entonces
-				escribir "El nùmero mayor es a";
+				escribir "El nÃ¹mero mayor es a";
 				si (b>a) y (b>c) Entonces
-					escribir "El nùmero mayor es b";
+					escribir "El nÃ¹mero mayor es b";
 					si (c>a) y (c>b) Entonces
-						escribir "El nùmero mayor es c";
+						escribir "El nÃ¹mero mayor es c";
 					FinSi
 				FinSi
 			FinSi
@@ -46,11 +46,11 @@ Algoritmo sin_titulo
 		
 		
 		si (a<b) y (a<c) Entonces
-			escribir "El nùmero menor es a";
+			escribir "El nÃ¹mero menor es a";
 			si (b<a) y (b<c) Entonces
-				escribir "El nùmero menor es b";
+				escribir "El nÃ¹mero menor es b";
 				si (c<a) y (c<b) Entonces
-					escribir "El nùmero menor es c";
+					escribir "El nÃ¹mero menor es c";
 				FinSi
 			FinSi
 		FinSi
@@ -65,12 +65,3 @@ FinSegun
 FinAlgoritmo
 
 		
-
-		
-				
-
-			
-			
-			
-	
-
