@@ -14,6 +14,6 @@ class entradadetexto{
         nombre = System.console().
         readLine();
         //tenemos que concatenar los elementos
-        System.out.println("Hola " + nombre + " Bienvenido a la tronadera T_T");
+        System.out.println("Hola " + nombre + "Bienvenido a la tronadera T_T");
     }
 }

@@ -3,7 +3,7 @@ import java.lang.Math;
 
 //libreria math es para el uso de raiz cuadrada y potencias, asi como numero de euler pi, etc
 
-public class figuras {
+public class Figura {
 
     //variables globales
     double lado, altura, area, perimetro, lado2, lado3, base,lado4;
@@ -23,12 +23,12 @@ public class figuras {
          */
 
         do{
-            System.out.println("Programa para el cálculo de área y périmetro de figuras");
-            System.out.println("Elija la opción deseada: ");
+            System.out.println("Programa para el calculo de area y perimetro de figuras");
+            System.out.println("Elija una opcion deseada: ");
             System.out.println("1.- Cuadrado");
-            System.out.println("2.- Triángulo");
-            System.out.println("3.- Círculo");
-            System.out.println("4.- Rectángulo");
+            System.out.println("2.- Triangulo");
+            System.out.println("3.- Circulo");
+            System.out.println("4.- Rectangulo");
             System.out.println("5.- Salir");
 
             opcion = entrada.nextInt();
@@ -62,10 +62,10 @@ public class figuras {
             lado = entrada.nextDouble();
             perimetro = lado*4;
             area = lado*lado;
-            System.out.println("El périmetro es de: " +perimetro + " el área es de: " + area);
+            System.out.println("El perimetro es de: " +perimetro + " el area es de: " + area);
 
         }catch(Exception e){
-            System.out.println("Ingrese unicamente valores numéricos");
+            System.out.println("Ingrese unicamente valores numericos");
             System.out.println("Error: " + e.getMessage());
 
         }
@@ -73,7 +73,7 @@ public class figuras {
 
     public void calcularTriangulo(){
 
-        System.out.println("ingrese 1 para el área y 2 para tipos de triángulo : ");
+        System.out.println("Ingrese 1 para el área y 2 para tipos de triángulo : ");
         opcion = entrada.nextInt();
 
         switch(opcion){
@@ -91,22 +91,22 @@ public class figuras {
                     }catch(Exception e){
                         System.out.println("Ingrese unicamente valores numéricos");
                         System.out.println("Error: " + e.getMessage());
-                        System.out.println(e.getStackTrace()); 
+                        System.out.println(e.getStackTrace()); //obtiene la raiz del problema
 
                     }
 
                 break;
             case 2:
 
-                System.out.println("Qué triángulo es  y su perímetro "); 
-                System.out.println("Ingrese el primer lado :"); 
+                System.out.println("Qué triángulo es y su perímetro "); 
+                System.out.println("Ingrese el primer lado:"); 
                 lado = entrada.nextDouble(); 
-                System.out.println("Ingrese el segundo lado "); 
+                System.out.println("Ingrese el segundo lado: "); 
                 lado2 = entrada.nextDouble(); 
-                System.out.println("Ingrese el tercer lado :"); 
+                System.out.println("Ingrese el tercer lado:"); 
                 lado3 = entrada.nextDouble(); 
                 perimetro = (lado+lado+lado3); 
-                System.out.println("El perímetro del triángulo es : " + perimetro);  
+                System.out.println("El perímetro del triángulo es: " + perimetro);  
                 if(lado == lado2 && lado == lado3 && lado2 == lado3){
                     System.out.println("y el triángulo es equilátero ");
                 }
@@ -120,34 +120,34 @@ public class figuras {
                 System.out.println("tarea");
                 break;
             default:
-                System.out.println("Opcion invalida rayoss");
+                System.out.println("Opción invalida rayoss");
                 break;
         }
     }
 
     public void calcularCirculo(){
-        System.out.println("ingrese 1 para el área y 2 para el perímetro : ");
+        System.out.println("ingrese 1 para el area y 2 para el perimetro : ");
         opcion = entrada.nextInt();
 
         switch(opcion){
             case 1:
-                System.out.println("Ingrese el radio del círculo: ");
+                System.out.println("Ingresa el radio del circulo: ");
                 lado = entrada.nextDouble();
 
                 //pi * r* r
                 area = Math.PI*lado*lado;
-                System.out.println("El área es de: " + area);
+                System.out.println("El area es de: " + area);
                 break;
             case 2:
-                System.out.println("Ingrese el diámetro del círculo: ");
+                System.out.println("Ingrese el diametro del circulo: ");
                 lado = entrada.nextDouble();
 
                 //PI * diametro
                 perimetro = Math.PI*lado;
-                System.out.println("El perímetro es de : " + perimetro);
+                System.out.println("El perimetro es de : " + perimetro);
                 break;
             default:
-                System.out.println("Opción invalida");
+                System.out.println("Opcion no valida");
                 break;
         }
 
@@ -156,13 +156,13 @@ public class figuras {
 
     public void calcularRectangulo(){
         System.out.println("Rectángulo"); 
-        System.out.println("Lee las opciones y escoge la de tu agrado : "); 
+        System.out.println("Escoge la opción deseada: "); 
         System.out.println("1 Área"); 
         System.out.println("2 Perímetro"); 
         op = entrada.nextInt(); 
         switch(op){
             case 1 :
-            System.out.print("Ingrese la altura del rectángulo : "); 
+            System.out.print("ingrese la altura del rectángulo : "); 
             altura = entrada.nextDouble(); 
             System.out.print("Ingrese la base del rectángulo : "); 
             base = entrada.nextDouble(); 
@@ -182,11 +182,11 @@ public class figuras {
 
             perimetro = (lado+lado2+lado3+lado4); 
 
-            System.out.println("El perímetro del rectángulo es : "+perimetro); 
+            System.out.println("El Perímetro del rectángulo es : "+perimetro); 
             break; 
         }
 
-       
+        //tarea wiiii para que ahorita lo acaben w
 
     }
 
